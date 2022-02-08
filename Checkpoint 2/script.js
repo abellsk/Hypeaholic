@@ -20,7 +20,7 @@ $(document).ready(function () {
       //[STEP 3]: get form values when user clicks on send
       //Adapted from restdb api
       let jsondata = {
-        "name": userName,
+        "username": userName,
         "password": passWord
       };
   
