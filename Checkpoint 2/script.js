@@ -1,7 +1,7 @@
 //[STEP 0]: Make sure our document is A-OK
 $(document).ready(function () {
     //what kind of interface we want at the start 
-    const APIKEY = "61d7a66bccd0211b320897f6";
+    const APIKEY = "61fcfb383f215f310a37be8f";
     getContacts();
     $("#update-contact-container").hide();
     $("#add-update-msg").hide();
@@ -14,29 +14,21 @@ $(document).ready(function () {
       //[STEP 2]: let's retrieve form data
       //for now we assume all information is valid
       //you are to do your own data validation
-      let contactName = $("#contact-name").val();
-      let contactEmail = $("#contact-email").val();
-      let contactMessage = $("#contact-msg").val();
-      let contactStudentID = $("#contact-Studentid").val();
-      let contactMentor = $("#contact-mentor").val();
-      let contactClass =  $("#contact-class").val();
+      let userName = $("#username").val();
+      let passWord = $("#password").val();
   
       //[STEP 3]: get form values when user clicks on send
       //Adapted from restdb api
       let jsondata = {
-        "name": contactName,
-        "email": contactEmail,
-        "message": contactMessage,
-        "studentid" : contactStudentID,
-        "studentMentor" : contactMentor,
-        "studentClass" : contactClass
+        "name": userName,
+        "password": passWord
       };
   
       //[STEP 4]: Create our AJAX settings. Take note of API key
       let settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://interactivedev-6895.restdb.io/rest/contact",
+        "url": "https://abellsk.github.io/Hypeaholic/login.html	",
         "method": "POST", //[cher] we will use post to send info
         "headers": {
           "content-type": "application/json",
@@ -78,7 +70,7 @@ $(document).ready(function () {
       let settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://interactivedev-6895.restdb.io/rest/contact",
+        "url": "https://abellsk.github.io/Hypeaholic/login.html	",
         "method": "GET", //[cher] we will use GET to retrieve info
         "headers": {
           "content-type": "application/json",
@@ -214,4 +206,3 @@ $(document).ready(function () {
     }//end updateform function
   
   })
-  
