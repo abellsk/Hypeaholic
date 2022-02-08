@@ -105,12 +105,8 @@ $(document).ready(function () {
           //we use ${content} because -> content += content 
           //we want to add on previous content at the same time
           content = `${content}<tr id='${response[i]._id}'>
-          <td>${response[i].name}</td>
-          <td>${response[i].email}</td>
-          <td>${response[i].message}</td>
-          <td>${response[i].studentid}</td>
-          <td>${response[i].studentClass}</td>
-          <td>${response[i].studentMentor}</td>
+          <td>${response[i].username}</td>
+          <td>${response[i].password}</td>
   
           <td><a href='#' class='delete' data-id='${response[i]._id}'>Del</a></td><td><a href='#update-contact-container' class='update' 
   
