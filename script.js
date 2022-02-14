@@ -126,3 +126,22 @@ $(document).ready(function () {
   
     }
   })
+
+  //[STEP 0]: Make sure our document is A-OK
+$(document).ready(function () {
+  //what kind of interface we want at the start 
+  const APIKEY = "61fcfb383f215f310a37be8f";
+  getContacts();
+  $("#add-update-msg").hide();
+
+  //[STEP 1]: Create our submit form listener
+  $("#login-submit").on("click", function (e) {
+    //prevent default action of the button 
+    e.preventDefault();
+    //[STEP 2]: let's retrieve form data
+    //for now we assume all information is valid
+    //you are to do your own data validation
+    let userName = $("#username").val();
+    let passWord = $("#password").val();
+  }
+}
