@@ -28,7 +28,7 @@ $(document).ready(function () {
       let settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://hypeaholic-dde8.restdb.io/home/db/hypeaholic-dde8/cards/61fcf5d08d779a010001b3f4",
+        "url": "https://hypeaholic-dde8.restdb.io/rest/username",
         "method": "POST", //[cher] we will use post to send info
         "headers": {
           "content-type": "application/json",
@@ -70,7 +70,7 @@ $(document).ready(function () {
       let settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://hypeaholic-dde8.restdb.io/home/db/hypeaholic-dde8/cards/61fcf5d08d779a010001b3f4",
+        "url": "https://hypeaholic-dde8.restdb.io/rest/username",
         "method": "GET", //[cher] we will use GET to retrieve info
         "headers": {
           "content-type": "application/json",
