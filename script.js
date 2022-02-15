@@ -84,13 +84,43 @@ $(document).ready(function () {
       //RESTDb/NoSql always adds in a unique id for each data, we tap on it to have our data and place it into our links 
   
       $.ajax(settings).done(function (response) {
-        if (tempUser == userName && tempPass == passWord) {
-          window.location.href = 'home.html';
-        } 
-        else {
-          window.alert('CANNOT');
+        
+        let content = "";
+  
+        for (var i = 0; i < response.length && i < limit; i++) {
+          //console.log(response[i]);
+          //[METHOD 1]
+          //let's run our loop and slowly append content
+          //we can use the normal string append += method
+          /*
+          content += "<tr><td>" + response[i].name + "</td>" +
+            "<td>" + response[i].email + "</td>" +
+            "<td>" + response[i].message + "</td>
+            "<td>Del</td><td>Update</td</tr>";
+          */
+  
+          //[METHOD 2]
+          //using our template literal method using backticks
+          //take note that we can't use += for template literal strings
+          //we use ${content} because -> content += content 
+          //we want to add on previous content at the same time
+          content = `${content}<tr id='${response[i]._id}'>
+          <td>${response[i].userName}</td>
+          <td>${response[i].password}</td>
+  
+          <td><a href='#' class='delete' data-id='${response[i]._id}'>Del</a></td><td><a href='#update-contact-container' class='update' 
+  
+          data-id='${response[i]._id}' data-msg='${response[i].message}' data-name='${response[i].name}' data-email='${response[i].email}
+  
+          '>Update</a></td></tr>`;
+  
         }
-
+  
+        //[STEP 9]: Update our HTML content
+        //let's dump the content into our table body
+        //$("#contact-list tbody").html(content);
+  
+        //$("#total-contacts").html(response.length);
       });
   
   
