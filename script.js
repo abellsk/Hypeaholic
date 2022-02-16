@@ -5,6 +5,7 @@ $(document).ready(function () {
     getContacts();
     $("#update-contact-container").hide();
     $("#add-update-msg").hide();
+    $("#login-fail-msg").hide();
   
     //[STEP 1]: Create our submit form listener
     $("#contact-submit").on("click", function (e) {
@@ -130,13 +131,14 @@ $(document).ready(function () {
     $("#login-submit").on("click", function (e) {
       //prevent default action of the button 
       e.preventDefault();
-
+      getUser();
       //[STEP 2]: let's retrieve form data
       //for now we assume all information is valid
       //you are to do your own data validation
       var tempUser = $("#username").val();
       var tempPass = $("#password").val();
-      
+
+
     
     //[STEP] 6
     //let's create a function to allow you to retrieve all the information in your contacts
@@ -156,16 +158,18 @@ $(document).ready(function () {
       }
       //[STEP 8]: Make our AJAX calls
       $.ajax(settings).done(function (response) {
-        console.log(response[0].username)
-        console.log(response[0].password)
-        if (tempUser == response[0].username && tempPass == response[0].password) {
-          window.location.href = 'https://abellsk.github.io/Hypeaholic/home.html';
-        } 
-        else {
-          window.alert('CANNOT');
+        for (var i = 0; i < response.length && i < limit; i++){
+          if (tempUser == response[i].username && tempPass == response[i].password) {
+            $("#add-update-msg").show().fadeOut(200);
+            window.location.href = 'home.html';
+            break;
+          } 
+          else if (tempUser != response[i].username || tempPass != response[i].password){
+            window.alert("Login Failed! Either your username or Password is wrong. Please try again.");
+          }
         }
-      }
-    )};
+    })
+    };
   })
 })
 

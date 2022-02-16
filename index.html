@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Simple RESTDB</title>
+	<title>Hypeaholic Login Page</title>
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
 	 crossorigin="anonymous">
@@ -20,6 +20,9 @@
 				Account authenticated!
 			</div>
 		</div>
+		<div id="login-fail-msg">
+			Login Failed! Either your username or Password is wrong. Please try again.
+		</div>
 		<div class="form" id="add-contact">
 			<form id="add-contact-form">
 				<div class="form-group">
@@ -33,7 +36,8 @@
           </div>
           <input type="submit" value="Login" class="btn btn-primary" id="login-submit">  
       </form>
-	  <a href="signup.html"><button class="btn btn-primary">Sign Up here</button></a>
+	  <h2>Don't have an account yet? Sign up here!</h2>
+	  <a href="signup.html"><button class="btn btn-primary">Sign Up</button></a>
     </div>
   </div><!-- end add container --> 
 
