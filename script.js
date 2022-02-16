@@ -159,7 +159,7 @@ $(document).ready(function () {
         console.log(response[0].username)
         console.log(response[0].password)
         if (tempUser == response[0].username && tempPass == response[0].password) {
-          window.location.href = 'home.html';
+          window.location.href = 'https://abellsk.github.io/Hypeaholic/home.html';
         } 
         else {
           window.alert('CANNOT');
