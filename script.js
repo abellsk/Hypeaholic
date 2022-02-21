@@ -1,11 +1,16 @@
 //[STEP 0]: Make sure our document is A-OK
+
 $(document).ready(function () {
     //what kind of interface we want at the start 
     const APIKEY = "61fcfb383f215f310a37be8f";
     getContacts();
+    let currentUser="";
+    console.log(currentUser);
+    
     $("#update-contact-container").hide();
     $("#add-update-msg").hide();
     $("#login-fail-msg").hide();
+    
   
     //[STEP 1]: Create our submit form listener
     $("#contact-submit").on("click", function (e) {
@@ -105,7 +110,8 @@ $(document).ready(function () {
           //take note that we can't use += for template literal strings
           //we use ${content} because -> content += content 
           //we want to add on previous content at the same time
-          content = `${content}<tr id='${response[i]._id}'>
+          content = `${content}
+          <tr id='${response[i]._id}'>
           <td>${response[i].userName}</td>
           <td>${response[i].password}</td>
   
@@ -137,7 +143,7 @@ $(document).ready(function () {
       //you are to do your own data validation
       var tempUser = $("#username").val();
       var tempPass = $("#password").val();
-
+     
 
     
     //[STEP] 6
@@ -160,16 +166,93 @@ $(document).ready(function () {
       $.ajax(settings).done(function (response) {
         for (var i = 0; i < response.length && i < limit; i++){
           if (tempUser == response[i].username && tempPass == response[i].password) {
-            $("#add-update-msg").show().fadeOut(200);
+            currentUser = response[i].username;
+            localStorage.setItem('username', currentUser);
+            console.log(currentUser);
+            console.log(i)
+            console.log(response.length)
+            //$("#add-update-msg").show().fadeOut(200);
             window.location.href = 'home.html';
             break;
-          } 
-          else if (tempUser != response[i].username || tempPass != response[i].password){
-            window.alert("Login Failed! Either your username or Password is wrong. Please try again.");
+            
           }
+          if (response.length == i)
+          {
+            if (tempUser != response[i].username || tempPass != response[i].password){
+              window.alert("Login Failed! Either your username or Password is wrong. Please try again.");
+            }
+          }
+          
         }
+        
+        
     })
-    };
+    
+  };
+
+  
+  
+
+  
+
   })
+  /*
+  $(".btn").on("click", function (e) {
+    //prevent default action of the button 
+    e.preventDefault();
+
+    //[STEP 2]: let's retrieve form data
+    //for now we assume all information is valid
+    //you are to do your own data validation
+    let item = $("#BapeShark").val();
+
+    //Create our AJAX settings
+    var jsondata = {"item": item};
+    var settings = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://hypeaholic-dde8.restdb.io/rest/username",
+      "method": "PUT",
+      "headers": {
+      "content-type": "application/json",
+      "x-apikey": APIKEY,
+      "cache-control": "no-cache"
+    },
+    "processData": false,
+    "data": JSON.stringify(jsondata)
+  }
+
+$.ajax(settings).done(function (response) {
+  console.log(item)
+  console.log(response);
+});
+  });//end click
+  */ 
+  /*
+  $("#accountPage").on("click", function (e) {
+    //prevent default action of the button 
+    e.preventDefault();
+    getUserInfo();
+
+  //To retrieve data and show on account page
+ 
 })
+*/
+
+})
+
+function getUserInfo(){
+  var temp  = localStorage.getItem('username');
+  console.log(temp);
+  document.getElementById("userInfo").innerHTML = "Name: " + temp;
+};
+
+
+/*
+function getUserInfo(){
+  console.log(realcurrentuser)
+  
+}
+*/
+
 
