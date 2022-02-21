@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
+    <title>Products</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
   </head>
   <body>
 
@@ -19,27 +23,427 @@
     <label for="check" class="checkbtn">
       <i class="fas fa-bars"></i>
     </label>
-
-      <label class="logo">HypeAholic</label>
+      
+      <a href="home.html"><label class="logo"> HypeAholic</label></a>
       <ul>
         <li>
-          <a href="index.html">Home</a>
+          <a href="home.html" id="hover">Home</a>
         </li>
         <li>
-         <a class="active" href="product.html" >Products</a>
+         <a class="active" href="product.html" id="hover" >Products</a>
         </li>
         <li>
-        <a href="2ndhand.html">Second-Hand</a>
+        <a href="news.html" id="hover">News</a>
         </li>
         <li>
-        <a href="news.html" >News</a>
+        <a href="account.html" id="hover">Account</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-cart-shopping"></i>
         </li>
         
       </ul>
     </nav>
-  
 
+    <div class="products"> 
+      <div class="container">
+        <h2 class="top-title"> Products </h2>
+          
+        <div class="product-items">
+          <div class="product">
+            <div class="product-content">
+              <div class="product-img"> <img src="images/bape jacket.png" alt="product image" id="padding"> </div>
+              <div class="product-btns">
+                <button type="button" class="btn-cart"> Add to Cart
+                  <span><i class="fas fa-plus"></i></span>
+                </button>
+                <button type="button" class="btn-buy"> Buy Now
+                  <span><i class="fas fa-shopping-cart"></i></span>
+                </button>
+              </div>
+            </div>
 
+            <div class="product-info">
+              <div class="product-info-top">
+                <h3 class="product-title"> Bape </h3>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name"> Rose Mens Bomber Jacket</a>
+              <p class="product-price"> S$446.00</p>
+            </div>
+          </div>
+              
+          <div class="product">
+            <div class="product-content">
+              <div class="product-img" id="productimg2"> 
+                <img src="images/off white jacket.png" alt="product image" id="padding"> 
+              </div>
+              <div class="product-btns">
+                <button type="button" class="btn-cart"> Add to Cart
+                  <span><i class="fas fa-plus"></i></span>
+                </button>
+                <button type="button" class="btn-buy"> Buy Now
+                   <span><i class="fas fa-shopping-cart"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-info-top">
+                <h3 class="product-title"> Off-White </h3>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star-half"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name"> Off White Jordan Hoodie </a>
+              <p class="product-price"> S$599.00</p>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-content">
+              <div class="product-img" id="gucci"> <img src="images/gucci.png" alt="product image"> </div>
+              <div class="product-btns">
+                <button type="button" class="btn-cart"> Add to Cart
+                  <span><i class="fas fa-plus"></i></span>
+                </button>
+                <button type="button" class="btn-buy"> Buy Now
+                  <span><i class="fas fa-shopping-cart"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-info-top">
+                <h3 class="product-title"> Gucci </h3>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star-half"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name"> Oversized T-Shirt </a>
+              <p class="product-price"> S$299.00</p>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-content">
+              <div class="product-img" id="nike"> <img src="images/nike-cap.png" alt="product image"> </div>
+              <div class="product-btns">
+                <button type="button" class="btn-cart"> Add to Cart
+                  <span><i class="fas fa-plus"></i></span>
+                </button>
+                <button type="button" class="btn-buy"> Buy Now
+                  <span><i class="fas fa-shopping-cart"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-info-top">
+                <h3 class="product-title"> Nike </h3>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name"> Sports / Fashion Cap </a>
+              <p class="product-price"> S$35.00 </p>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-content">
+              <div class="product-img" id="nike"> <img src="images/supreme x nike.png" alt="product image"> </div>
+              <div class="product-btns">
+                <button type="button" class="btn-cart"> Add to Cart
+                  <span><i class="fas fa-plus"></i></span>
+                </button>
+                <button type="button" class="btn-buy"> Buy Now
+                  <span><i class="fas fa-shopping-cart"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-info-top">
+                <h3 class="product-title"> Supreme X Nike </h3>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name"> Supreme x Nike Air Uptempo Sneakers </a>
+              <p class="product-price"> S$2,100.00 </p>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-content">
+              <div class="product-img"> <img src="images/adidas puffer jacket.png" alt="product image"  id="adidas"> </div>
+              <div class="product-btns">
+                <button type="button" class="btn-cart"> Add to Cart
+                  <span><i class="fas fa-plus"></i></span>
+                </button>
+                <button type="button" class="btn-buy"> Buy Now
+                  <span><i class="fas fa-shopping-cart"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-info-top">
+                <h3 class="product-title"> Adidas </h3>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star-half"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name"> Outdoor Puffer Jacket  </a>
+              <p class="product-price"> S$330.00 </p>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-content">
+              <div class="product-img"> <img src="images/stussy shirt.png" alt="product image"  id="adidas"> </div>
+              <div class="product-btns">
+                <button type="button" class="btn-cart"> Add to Cart
+                  <span><i class="fas fa-plus"></i></span>
+                </button>
+                <button type="button" class="btn-buy"> Buy Now
+                  <span><i class="fas fa-shopping-cart"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-info-top">
+                <h3 class="product-title"> Stussy </h3>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name"> Compton T-Shirt Bleach </a>
+              <p class="product-price"> S$59.00 </p>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-content">
+              <div class="product-img"> <img src="images/Offwhite-2.png" alt="product image"  id="adidas"> </div>
+              <div class="product-btns">
+                <button type="button" class="btn-cart"> Add to Cart
+                  <span><i class="fas fa-plus"></i></span>
+                </button>
+                <button type="button" class="btn-buy"> Buy Now
+                  <span><i class="fas fa-shopping-cart"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-info-top">
+                <h3 class="product-title"> Off-White </h3>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name"> Off White ArrowHead Necklace </a>
+              <p class="product-price"> S$516.00 </p>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-content">
+              <div class="product-img"> <img src="images/balenciaga-1.png" alt="product image"  id="balenciaga"> </div>
+              <div class="product-btns">
+                <button type="button" class="btn-cart"> Add to Cart
+                  <span><i class="fas fa-plus"></i></span>
+                </button>
+                <button type="button" class="btn-buy"> Buy Now
+                  <span><i class="fas fa-shopping-cart"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-info-top">
+                <h3 class="product-title"> Balenciaga </h3>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star-half"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name"> Sports Paris Graphic Hoodie </a>
+              <p class="product-price"> S$899.00 </p>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-content">
+              <div class="product-img"> <img src="images/Palace Tee.png" alt="product image"  id="palace"> </div>
+              <div class="product-btns">
+                <button type="button" class="btn-cart"> Add to Cart
+                  <span><i class="fas fa-plus"></i></span>
+                </button>
+                <button type="button" class="btn-buy"> Buy Now
+                  <span><i class="fas fa-shopping-cart"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-info-top">
+                <h3 class="product-title"> Palace </h3>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name"> Tri-Tex short-sleeve T-Shirt </a>
+              <p class="product-price"> S$120.00 </p>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-content">
+              <div class="product-img"> <img src="images/HUF-1.png" alt="product image"  id="balenciaga"> </div>
+              <div class="product-btns">
+                <button type="button" class="btn-cart"> Add to Cart
+                  <span><i class="fas fa-plus"></i></span>
+                </button>
+                <button type="button" class="btn-buy"> Buy Now
+                  <span><i class="fas fa-shopping-cart"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-info-top">
+                <h3 class="product-title"> HUF </h3>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name"> Reynard T-shirt </a>
+              <p class="product-price"> S$49.90 </p>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="product-content">
+              <div class="product-img"> <img src="images/offwhite-2.png" alt="product image"  id="palace"> </div>
+              <div class="product-btns">
+                <button type="button" class="btn-cart"> Add to Cart
+                  <span><i class="fas fa-plus"></i></span>
+                </button>
+                <button type="button" class="btn-buy"> Buy Now
+                  <span><i class="fas fa-shopping-cart"></i></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <div class="product-info-top">
+                <h3 class="product-title"> Off-white </h3>
+                <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                </div>
+              </div>
+              <a href="#" class="product-name"> Parachute Cargo Pants </a>
+              <p class="product-price"> S$600.00 </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
   </body>
+
+  <footer class="section-p1"> 
+    <div>
+      <h4>Contact</h4>
+      <p><strong>Address: </strong> 22 Bleecker Street Greenwich Village New York City</p>
+      <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter-square"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track My Order</a>
+      <a href="#">Help</a>
+    </div>
+
+ 
+
+    <div class="copyright">
+      <p> Copyright &copy; 2021, Spidermen IP project</p>
+    </div>
+  </footer>
+
 
 </html>
