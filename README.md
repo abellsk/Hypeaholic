@@ -40,7 +40,7 @@ Our website is for those who enjoys fashion, those who are looking for hypebeast
 - Bootstrap
 
 # Media
-Bape [pictures] (https://int.bape.com/)
+[pictures](https://int.bape.com/)
 
 
 - Nike pictures : 
