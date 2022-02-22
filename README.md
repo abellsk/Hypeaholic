@@ -52,6 +52,9 @@ We want our website to be as minimalistic, luxurious and premium as possible. As
 - RestDb
 - Bootstrap
 
+# Fonts Used
+- [Font awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/) 
 # Media
 - Bape [pictures](https://int.bape.com/)
 - Nike [pictures](https://www.nike.com/sg/membership?cp=32474922017_search_%7csg%7cCore+Brand+-+GN+-+Pure+-+XCategory+-+Nike+Singapore+-+TM+-+General+-+Mens+LP+-+EN_EN+-+Exact%7cGOOGLE%7cnike&gclid=CjwKCAiAsNKQBhAPEiwAB-I5zRmttXEzIUjW7w8hlt2DUCKgfwWolQGoA5YdPXah--l0w3OfpVHyNRoCUg4QAvD_BwE&gclsrc=aw.ds)
