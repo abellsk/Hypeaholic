@@ -34,7 +34,7 @@
         <a href="account.html">Account</a>
         </li>
         <li>
-          <i class="fa-solid fa-cart-shopping"></i>
+          <a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
         </li>
         
       </ul>
@@ -65,7 +65,7 @@
                 <span><i class="fas fa-star"></i></span>
               </div>
             </p>
-            <a href="#" class="btn">Add to cart
+            <button onclick="addedCart()">Add to cart</button>
               <span><i class="fas fa-shopping-cart"></i></span>
             </a>
         </div>
@@ -114,4 +114,9 @@
    <p> Copyright &copy; 2021, Spidermen IP project</p>
 
  </div>
+ <script>
+   function addedCart(){
+     alert("Item has been added to cart!");
+   }
+ </script>
 </footer>

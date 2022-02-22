@@ -1,0 +1,23 @@
+text{
+    font-family:Helvetica, Arial, sans-serif;
+    font-size:11px;
+    pointer-events:none;
+}
+#chart{
+    width:500px;
+    height:500px;
+    margin: 0 auto;
+}
+#question{
+    width:400px;
+    height:500px;
+    margin: 0 auto;
+    text-align: center;
+}
+#question h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+

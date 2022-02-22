@@ -1,10 +1,10 @@
 //[STEP 0]: Make sure our document is A-OK
-
 $(document).ready(function () {
     //what kind of interface we want at the start 
     const APIKEY = "61fcfb383f215f310a37be8f";
     getContacts();
     let currentUser="";
+    let currentEmail="";
     console.log(currentUser);
     
     $("#update-contact-container").hide();
@@ -16,18 +16,21 @@ $(document).ready(function () {
     $("#contact-submit").on("click", function (e) {
       //prevent default action of the button 
       e.preventDefault();
+      
   
       //[STEP 2]: let's retrieve form data
       //for now we assume all information is valid
       //you are to do your own data validation
       let userName = $("#username").val();
       let passWord = $("#password").val();
+      let eMAIL = $('#email').val();
   
       //[STEP 3]: get form values when user clicks on send
       //Adapted from restdb api
       let jsondata = {
         "username": userName,
-        "password": passWord
+        "password": passWord,
+        "email": eMAIL
       };
   
       //[STEP 4]: Create our AJAX settings. Take note of API key
@@ -49,17 +52,20 @@ $(document).ready(function () {
           $("#contact-submit").prop( "disabled", true);
           //clear our form using the form id and triggering it's reset feature
           $("#add-contact-form").trigger("reset");
+          console.log(jsondata);
         }
       }
   
       //[STEP 5]: Send our ajax request over to the DB and print response of the RESTDB storage to console.
       $.ajax(settings).done(function (response) {
+        console.log(userName);
+        console.log(eMAIL);
         console.log(response);
         
         $("#contact-submit").prop( "disabled", false);
         
         //@TODO update frontend UI 
-        $("#add-update-msg").show().fadeOut(3000);
+        $("#add-update-msg").show();
   
         //update our table 
         getContacts();
@@ -114,7 +120,7 @@ $(document).ready(function () {
           <tr id='${response[i]._id}'>
           <td>${response[i].userName}</td>
           <td>${response[i].password}</td>
-  
+          <td>${response[i].eMAIL}</td>
           <td><a href='#' class='delete' data-id='${response[i]._id}'>Del</a></td><td><a href='#update-contact-container' class='update' 
   
           data-id='${response[i]._id}' data-msg='${response[i].message}' data-name='${response[i].name}' data-email='${response[i].email}
@@ -167,7 +173,9 @@ $(document).ready(function () {
         for (var i = 0; i < response.length && i < limit; i++){
           if (tempUser == response[i].username && tempPass == response[i].password) {
             currentUser = response[i].username;
+            currentEmail = response[i].email;
             localStorage.setItem('username', currentUser);
+            localStorage.setItem('email', currentEmail);
             console.log(currentUser);
             console.log(i)
             console.log(response.length)
@@ -197,7 +205,7 @@ $(document).ready(function () {
 
   })
   /*
-  $(".btn").on("click", function (e) {
+  $("#").on("click", function (e) {
     //prevent default action of the button 
     e.preventDefault();
 
@@ -211,7 +219,7 @@ $(document).ready(function () {
     var settings = {
       "async": true,
       "crossDomain": true,
-      "url": "https://hypeaholic-dde8.restdb.io/rest/username",
+      "url": "https://hypeaholic-dde8.restdb.io/rest/username/620cbea58d779a0100037d6e",
       "method": "PUT",
       "headers": {
       "content-type": "application/json",
@@ -223,11 +231,17 @@ $(document).ready(function () {
   }
 
 $.ajax(settings).done(function (response) {
-  console.log(item)
+  console.log(item);
   console.log(response);
+  console.log("item added to cart");
 });
-  });//end click
-  */ 
+  });
+  */
+  
+  
+  
+  //end click
+
   /*
   $("#accountPage").on("click", function (e) {
     //prevent default action of the button 
@@ -243,9 +257,16 @@ $.ajax(settings).done(function (response) {
 
 function getUserInfo(){
   var temp  = localStorage.getItem('username');
+  var temp2 = localStorage.getItem('email')
   console.log(temp);
-  document.getElementById("userInfo").innerHTML = "Name: " + temp;
+  document.getElementById("userInfo").innerHTML = "Username: " + temp;
+  document.getElementById("usersEmail").innerHTML = "Email: " + temp2;
 };
+
+function boughT(){
+  window.alert("Purchase Succesful!")
+  window.location.href = 'index.html';
+}
 
 
 /*

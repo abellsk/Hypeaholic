@@ -3,7 +3,7 @@ button{
     font-weight: 700;
     outline: none;
     border: none;
-    background-colour: black;
+    background-color: black;
     color: rgb(0, 0, 0);
     padding: 13px 30px;
     cursor: pointer;
@@ -12,7 +12,7 @@ button{
   }
   
   button:hover {
-    background-colour: #3a3833;
+    background-color: #3a3833;
      
   }
   
@@ -51,7 +51,7 @@ button{
     text-transform: uppercase;
   }
   
-  #hover.active,#hover:hover{
+  a.active,a:hover{
     background: coral;
     color: white;
     transition: .5s;
@@ -103,7 +103,7 @@ button{
     nav ul li a{
       font-size: 20px;
     }
-    #hover:hover,#hover.active{
+    a:hover,a.active{
       background: none;
       color: coral
     }

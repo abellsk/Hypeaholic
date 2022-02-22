@@ -3,7 +3,7 @@ button{
   font-weight: 700;
   outline: none;
   border: none;
-  background-colour: black;
+  background-color: black;
   color: aliceblue;
   padding: 13px 30px;
   cursor: pointer;
@@ -12,7 +12,7 @@ button{
 }
 
 button:hover {
-  background-colour: #3a3833;
+  background-color: #3a3833;
    
 }
 .btn{
@@ -105,6 +105,8 @@ a.active,a:hover{
   nav ul li a{
     font-size: 16px;
   }
+  
+    
 }
 
 
@@ -136,7 +138,16 @@ a.active,a:hover{
   #check:checked ~ ul{
     left: 0;
   }
+  #userpicture{
+    width:auto;
+    height: auto;
+  }
+  .UserInfoContainer{
+    width: 1000px;
+    height: auto;
+  }
 }
+
 #home{
   background-image: url("pics/hypepic.jpg"); 
   width: 100%;
@@ -367,3 +378,49 @@ footer a{
   margin: 5px;
 }
 
+.UserInfoContainer{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  background-color:#F2F2F2;
+  margin: 0 auto;
+}
+
+.UserInfoContainer h2{
+  text-align: center;
+}
+
+.UserInfoContainer ul{
+  text-align: center;
+}
+
+#userpicture{
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+}
+
+.cartContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#flex-column-cart{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#testing{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.emptY{
+  text-align: center;
+}
