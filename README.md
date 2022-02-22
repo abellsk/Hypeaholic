@@ -43,9 +43,9 @@ Our website is for those who enjoys fashion, those who are looking for hypebeast
 - Bape [pictures](https://int.bape.com/)
 - Nike [pictures](https://www.nike.com/sg/membership?cp=32474922017_search_%7csg%7cCore+Brand+-+GN+-+Pure+-+XCategory+-+Nike+Singapore+-+TM+-+General+-+Mens+LP+-+EN_EN+-+Exact%7cGOOGLE%7cnike&gclid=CjwKCAiAsNKQBhAPEiwAB-I5zRmttXEzIUjW7w8hlt2DUCKgfwWolQGoA5YdPXah--l0w3OfpVHyNRoCUg4QAvD_BwE&gclsrc=aw.ds)
 - Supreme [pictures](https://www.keeprunrun.com/nike-air-more-uptempo-supreme-suptempo-varsity-white-id178.html)
-- Offwhite and Gucci <br>
-[pictures](https://www.farfetch.com/nz/designers/men)
-[pictures](https://www.goat.com/sneakers/off-white-arrow-pendant-necklace-silver-omob045e20met0017800)
+- Offwhite and Gucci
+[pictures1](https://www.farfetch.com/nz/designers/men)
+[pictures2](https://www.goat.com/sneakers/off-white-arrow-pendant-necklace-silver-omob045e20met0017800)
 - News Page 1 [pictures](https://www.vogue.com/slideshow/phil-oh-best-street-style-photos-from-london-fashion-week-fall-2022)
 - News Page 2 [pictures](https://www.fashionbeans.com/article/best-streetwear-brands/)
 - News Page 3 [pictures](https://www.vogue.com/slideshow/street-style-ways-to-wear-gucci-fall-fashion)
