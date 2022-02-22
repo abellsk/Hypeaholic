@@ -40,8 +40,9 @@ Our website is for those who enjoys fashion, those who are looking for hypebeast
 - Bootstrap
 
 # Media
-- Bape pictures : 
-https://int.bape.com/
+- [Bape pictures : ] (https://int.bape.com/)
+
+
 - Nike pictures : 
 https://www.nike.com/sg/membership?cp=32474922017_search_%7csg%7cCore+Brand+-+GN+-+Pure+-+XCategory+-+Nike+Singapore+-+TM+-+General+-+Mens+LP+-+EN_EN+-+Exact%7cGOOGLE%7cnike&gclid=CjwKCAiAsNKQBhAPEiwAB-I5zRmttXEzIUjW7w8hlt2DUCKgfwWolQGoA5YdPXah--l0w3OfpVHyNRoCUg4QAvD_BwE&gclsrc=aw.ds
 - Supreme pictures:
