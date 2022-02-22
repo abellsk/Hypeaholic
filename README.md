@@ -10,6 +10,8 @@ Our website is for those who enjoys fashion, those who are looking for hypebeast
 - As a consumer who wants to buy hypebeast clothings, I can head to this website, browse and purchase clothes from there.
 - As a consumer who wants to know what is the latest fashion trend, I can read up articles that are constantly updated on the website.
 
+We want our website to be as minimalistic, luxurious and premium as possible. As such our website is neat and tidy with smooth animations and beautiful colors.
+
 # Features
 - In the index and signup pages, users are able to create accounts and login to the website.
 - We have a daily Spin the wheel function, where users can login daily into the website to spin for rewards. Rewards such as a $5 Off voucher which can benefit them at their next purchase.
