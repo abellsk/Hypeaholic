@@ -1,7 +1,8 @@
 # Hypeaholic
 Integrated Project
 This is an e-commerce website called HypeAholic. This is a website where we sell modern day "hype" shirts, Jewellery Such as Watches, Chains and Necklaces. And also a place where people can sell their 2nd hand items with a blog that guides others on the newest fashion trends. This website/project is done by: Justin Luis Hernandes, Ryan Chu and Abel Leng.
-Link to our website: <br>
+
+# Link to our website:
 https://abellsk.github.io/Hypeaholic/index.html
 
 # Design Process
@@ -48,4 +49,6 @@ https://www.fashionbeans.com/article/best-streetwear-brands/
 https://www.vogue.com/slideshow/street-style-ways-to-wear-gucci-fall-fashion
 - Stussy pictures: 
 https://doubledoublevintage.com/products/stussy-compton-t-shirt-bleach-xlarge
-palace : https://shop.palaceskateboards.com/collections/t-shirts
+palace :
+https://shop.palaceskateboards.com/collections/t-shirts
+HUF : https://hufworldwide.com/
