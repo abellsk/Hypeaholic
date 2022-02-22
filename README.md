@@ -18,6 +18,12 @@ Our website is for those who enjoys fashion, those who are looking for hypebeast
 - Hamburger Menu when in mobile view.
 - We have a news section for consumers to learn and read about all the latest fashion articles so that they know about the latest trends.
 
+# Features to implement
+- To be able to use the actual vouchers as discounts
+- To be able to use Hyper Coins as disocunt
+- Able to add to cart for all products
+- Spin the wheel updates what is won for the user
+
 # Testing
 1. Sign Up form:
 - Go to "Sign Up" page
@@ -49,6 +55,10 @@ https://www.fashionbeans.com/article/best-streetwear-brands/
 https://www.vogue.com/slideshow/street-style-ways-to-wear-gucci-fall-fashion
 - Stussy pictures: 
 https://doubledoublevintage.com/products/stussy-compton-t-shirt-bleach-xlarge
-palace :
+- Palace pictures :
 https://shop.palaceskateboards.com/collections/t-shirts
-HUF : https://hufworldwide.com/
+- HUF pictures: 
+https://hufworldwide.com/
+- Balenciaga pictures :
+https://www.balenciaga.com/en-us
+- Home page picture : https://savagemodeshop.com/
