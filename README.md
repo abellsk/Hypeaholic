@@ -1,39 +1,49 @@
 # Hypeaholic
 Integrated Project
 This is an e-commerce website called HypeAholic. This is a website where we sell modern day "hype" shirts, Jewellery Such as Watches, Chains and Necklaces. And also a place where people can sell their 2nd hand items with a blog that guides others on the newest fashion trends. This website/project is done by: Justin Luis Hernandes, Ryan Chu and Abel Leng.
+Link to our website: https://abellsk.github.io/Hypeaholic/index.html
 
-Current Test Plan
-We are currently editing and testing out our HTML, CSS and Javascript on Repl.it. We will Update our git when everything is almost done and ready to use.
+#Design Process
+Our website is for those who enjoys fashion, those who are looking for hypebeast clothes and want to keep up with the latest fashion trends. Our website is user-friendly and carries a wide variety of brands that is easily accesible for them. We also have a news section for them to read up on the latest fashion articles.
+- As a consumer who wants to buy hypebeast clothings, I can head to this website, browse and purchase clothes from there.
+- As a consumer who wants to know what is the latest fashion trend, I can read up articles that are constantly updated on the website.
 
-We currently doing:
-- RestDB as a way to save login information as well as a platform to sign up
-- Spin the Wheel 
-- Designs for our Nav bar
-- Designs for our Homepage
+#Features
+- In the index and signup pages, users are able to create accounts and login to the website.
+- We have a daily Spin the wheel function, where users can login daily into the website to spin for rewards. Rewards such as a $5 Off voucher which can benefit them at their next purchase.
+-We have a product page that is animated and responsive
+- A responsive nav bar
+- Hamburger Menu when in mobile view.
+- We have a news section for consumers to learn and read about all the latest fashion articles so that they know about the latest trends.
 
-Things we have already done and are working on if any changes:
-- Login Page
-- Index Page
-- Nav bar (Hamburger menu)
+#Testing
+1. Sign Up form:
+i. Go to "Sign Up" page
+ii. Enter your username, password and email to create an account
+iii. Click on "Sign Up: button on signup page
+iv. When account is succesfully created, a green popup message will appear saying that " Account succesfully created!"
+v. Go back and "Login" with credentials. The page will redirect users to the homepage of the website
 
-
-Features
-- Spin the Wheel, When users first login and enter this website they will be greeted with a spin the wheel popup, which grants them daily rewards/gifts
-
-- Blog for people to share, read and learn about fashion tips or the latest fashion trends
-
-- There is a hero-image in the middle of the index page. To show our discounts and a button to redirect users to the products.
-
-
-Technologies used
+#Technologies used
 - HTML
 - CSS
 - JavaScript
 - RestDb
 - Bootstrap
-- And many more to come!
 
-Media Pictures
-- All album pictures were retrieved from google. And will be updated here when everything is completed.
-
-
+#Media
+- Bape pictures : 
+https://int.bape.com/
+- Nike pictures : 
+https://www.nike.com/sg/membership?cp=32474922017_search_%7csg%7cCore+Brand+-+GN+-+Pure+-+XCategory+-+Nike+Singapore+-+TM+-+General+-+Mens+LP+-+EN_EN+-+Exact%7cGOOGLE%7cnike&gclid=CjwKCAiAsNKQBhAPEiwAB-I5zRmttXEzIUjW7w8hlt2DUCKgfwWolQGoA5YdPXah--l0w3OfpVHyNRoCUg4QAvD_BwE&gclsrc=aw.ds
+- Supreme pictures:
+ https://www.keeprunrun.com/nike-air-more-uptempo-supreme-suptempo-varsity-white-id178.html
+- Offwhite and Gucci pictures : 
+https://www.farfetch.com/nz/designers/men
+https://www.goat.com/sneakers/off-white-arrow-pendant-necklace-silver-omob045e20met0017800
+- News Page: 
+https://www.vogue.com/slideshow/phil-oh-best-street-style-photos-from-london-fashion-week-fall-2022
+https://www.fashionbeans.com/article/best-streetwear-brands/
+https://www.vogue.com/slideshow/street-style-ways-to-wear-gucci-fall-fashion
+- Stussy pictures: 
+https://doubledoublevintage.com/products/stussy-compton-t-shirt-bleach-xlarge
