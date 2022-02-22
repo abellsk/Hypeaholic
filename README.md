@@ -32,6 +32,17 @@ Our website is for those who enjoys fashion, those who are looking for hypebeast
 - When account is succesfully created, a green popup message will appear saying that " Account succesfully created!"
 - Go back and "Login" with credentials. The page will redirect users to the homepage of the website
 
+2. Remove cart items:
+- Go to cart page
+- Click on "remove" to remove all items in cart
+- It will redirect you to a empty cart list.
+
+3. Spin the wheel
+- Go to account page
+- Click on "Daily Spin the Wheel"
+- Click on "spin" in the middle of the wheel to start spinning the wheel for rewards.
+- Rewards won will be shown and you wil be able to go back to the home page.
+
 # Technologies used
 - HTML
 - CSS
